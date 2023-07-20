@@ -8,6 +8,7 @@ zplug "rupa/z"
 zplug "mafredri/zsh-async", from:github
 zplug "djui/alias-tips"
 zplug "agkozak/zsh-z"
+zplug "zsh-users/zsh-autosuggestions"
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -36,10 +37,7 @@ alias noassume='g update-index --no-assume-unchanged apps/www/pages/_app.tsx'
 alias noassumeconfig='g update-index --no-assume-unchanged apps/www/next.config.js'
 alias resetgit='git reset --hard HEAD~1'
 
-bindkey -M main '^[OA' history-substring-search-up
-bindkey -M main '^[OB' history-substring-search-down
-bindkey -M main '^[[A' history-substring-search-up
-bindkey -M main '^[[B' history-substring-search-up
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 autoload -U promptinit; promptinit
 prompt pure
