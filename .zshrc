@@ -23,6 +23,7 @@ plugins=(
     zsh-autosuggestions
 )
 
+
 #Aliases 
 alias d='NODE_OPTIONS=--max_old_space_size=32768 netlify dev'
 alias t='yarn run test'
@@ -34,7 +35,7 @@ alias generate='nx generate:dev app'
 #Git
 alias g='git'
 alias gst='git status'
-alias gp='yarn lint && yarn typecheck && git push'
+alias gp='git push origin'
 alias ga="gst && git add"
 alias gb='git branch'
 alias gbD='git branch --delete --force'
@@ -51,6 +52,7 @@ alias grbi='git rebase --interactive'
 alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
 alias resetgit='git reset --hard HEAD~1'
+alias gitreset='git reset --hard HEAD~1'
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
@@ -62,3 +64,4 @@ zstyle ':completion:*' menu select
 # n exports
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
+
