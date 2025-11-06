@@ -41,7 +41,7 @@ alias gb='git branch'
 alias gbD='git branch --delete --force'
 alias gco='git checkout'
 alias gcb='git checkout -b'
-alias gcm='git checkout master'
+alias gcm='git checkout main'
 alias gcmsg='git commit --message'
 alias gcsmg='git commit --message'
 alias gmcsg='git commit --message'
@@ -64,4 +64,3 @@ zstyle ':completion:*' menu select
 # n exports
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
-
